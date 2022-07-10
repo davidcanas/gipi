@@ -9,7 +9,7 @@ An **Linux CLI** to get information of an IP address.
 
 **Installing:**
 
-**1 - Download the latest [release](https://github.com/davidcanas/gipi/releases)**
+**1 - Download the latest [release](https://github.com/davidcanas/gipi/releases/latest)**
 ```
 Download the gipi.tar.gz file
 ``` 
