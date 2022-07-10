@@ -5,6 +5,7 @@ An **Linux CLI** to get information of an IP adress.
 **Requirements:** 
 - Python 3 
 - **P**ython **p**ackage **i**ndex (PIP)
+- Internet connection (to download the files)
 
 **Installing:**
 
