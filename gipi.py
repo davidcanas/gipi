@@ -1,14 +1,11 @@
 #!/usr/bin/env python3
-
 import sys
 import os
 from requests import get
 from termcolor import colored
-
 # Some important variables
 version = "v0.2.1"
-commands = ["help", "version", "contact", "ip"]
-
+commands = ["help", "version", "contact", "ip", "uninstall"]
 # The translations
 pt = {
     "errors": {
@@ -24,7 +21,6 @@ pt = {
     "zip": "Código Postal (CEP): ",
     "timezone": "Fuso Horário: "
 }
-
 en = {
     "errors": {
         "noArgs": "You must specify an argument, try use gipi help!",
@@ -40,32 +36,28 @@ en = {
     "zip": "ZIP: ",
     "timezone": "Timezone: "
 }
-
 # Check if the system language is portuguese and if not use english
 if os.getenv('LANG').startswith("pt"):
     t = pt
 else:
     t = en
-
-
 if not len(sys.argv) > 1:
     print(colored(t["errors"]["noArgs"], "red", attrs=["underline"]))
     exit()
 if not sys.argv[1] in commands:
    print(colored(t["errors"]["commandNotExist"].replace("#cmd#", f'"{sys.argv[1]}"'), "red", attrs=["bold"]))
-
 if sys.argv[1] == "help":
-    print(colored("ip,version,contact,help", "green"))
-
+    print(colored("ip,version,contact,uninstall,help", "green"))
 if sys.argv[1] == "version" or sys.argv[1] == "v":
     print(version)
-
 if sys.argv[1] == "contact":
     print(colored("Discord:", "yellow", attrs=["bold"]) + "\n" + colored("Canas#8888", "cyan", attrs=["bold"]) + "\n" + "---" + "\n" + colored("Support Server:", "yellow", attrs=["bold"]) + "\n" + colored(
         "https://discord.gg/aj3sSAyMsh", "cyan", attrs=["bold"]) + "\n" + "---" + "\n" + colored("Github:", "yellow", attrs=["bold"]) + "\n" + colored("https://github.com/davidcanas/gipi", "cyan", attrs=["bold"]))
-
+if sys.argv[1] == "uninstall":
+   print("Uninstalling GIPI, hope to see you again :)\nIf you're not happy with something create an issue on github")
+   os.system("sudo rm /usr/bin/gipi")
+   print("Sucessfully uninstalled gipi!")
 if sys.argv[1] == "ip":
-
     if not len(sys.argv) > 2:
         ip = get('https://api.ipify.org').text
     else:
@@ -75,7 +67,6 @@ if sys.argv[1] == "ip":
     if result["status"] != "success":
         print(colored(t["errors"]["noExistsIP"], "red", attrs=["underline"]))
         exit()
-
     print(colored("IP: ", "green", attrs=["bold"]) + result["query"])
     print(colored(t["continent"], "green", attrs=[
           "bold"]) + result["continent"] + " ("+result["continentCode"]+")")
