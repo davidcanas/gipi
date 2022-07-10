@@ -6,6 +6,5 @@ pip install -r requirements.txt
 cp gipi.py gipi
 chmod +x gipi
 cp gipi /usr/bin/
-dos2unix /usr/bin/gipi
 
 echo "GIPI installed with success! Use gipi help to see all commands!"
