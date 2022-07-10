@@ -1,4 +1,5 @@
-GIPI 
+GIPI
+---
 An **Linux** CLI to get information of an IP adress.
 
 **Requirements:** 
