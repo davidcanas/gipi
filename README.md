@@ -45,3 +45,5 @@ Or add support for more languages ​​(edit the gipi.py file)
 https://discord.gg/aj3sSAyMsh
 
 The server is in portuguese but we support english
+
+<img src="https://i.imgur.com/MGDh6rD.png">
