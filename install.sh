@@ -2,9 +2,10 @@ if [ "$EUID" -ne 0 ]
   then echo "Please run as root"
   exit
 fi
-mv gip.py gip
-chmod +x gip
-cp gip /usr/bin/
+pip install -r requirements.txt
+cp gipi.py gipi
+chmod +x gipi
+cp gipi /usr/bin/
 
 
-echo "GIP installed use gip version to verify!"
+echo "GIPI installed with success! Use gipi version to confirm!"
