@@ -1,6 +1,6 @@
 GIPI
 ---
-An **Linux** CLI to get information of an IP adress.
+An **Linux CLI** to get information of an IP adress.
 
 **Requirements:** 
 - Python 3 
