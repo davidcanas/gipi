@@ -1,6 +1,6 @@
 GIPI
 ---
-An **Linux CLI** to get information of an IP adress.
+An **Linux CLI** to get information of an IP address.
 
 **Requirements:** 
 - Python 3 
@@ -26,7 +26,7 @@ cd gipi
 
 **4 - Run the install script**
 ```sh
-$ sudo bash ./install.sh 
+$ sudo ./install.sh 
 ```
 
 **5 - Success, use gipi help to see all commands avaiable!**
