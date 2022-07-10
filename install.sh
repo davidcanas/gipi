@@ -8,4 +8,4 @@ chmod +x gipi
 cp gipi /usr/bin/
 
 
-echo "GIPI installed with success! Use gipi version to confirm!"
+echo "GIPI installed with success! Use gipi help to see all commands!"

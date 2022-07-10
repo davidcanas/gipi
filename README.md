@@ -1,6 +1,10 @@
 GIPI 
 
-An Linux CLI to get information of an IP adress.
+An **Linux** CLI to get information of an IP adress.
+
+Requirements: 
+- Python 3 
+- **P**ython **p**ackage **i**ndex (PIP)
 
 Installing:
 
@@ -21,3 +25,13 @@ $ sudo bash ./install.sh
 ```
 
 **5 - Success, use gipi help to see all commands avaiable!**
+
+Contribuing
+
+You can contribute by helping with the code (make a pull request)
+Or add support for more languages ​​(edit the gipi.py file)
+
+
+Discord
+
+https://discord.gg/aj3sSAyMsh
