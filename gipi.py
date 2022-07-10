@@ -6,7 +6,7 @@ from requests import get
 from termcolor import colored
 
 # Some important variables
-version = "v0.2.0"
+version = "v0.2.1"
 commands = ["help", "version", "contact", "ip"]
 
 # The translations
