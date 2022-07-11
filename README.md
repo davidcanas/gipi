@@ -9,16 +9,16 @@ An **Linux CLI** to get information of an IP address.
 
 **Installing:**
 
-**1 - Download the latest [release](https://github.com/davidcanas/gipi/releases/latest)**
+**1 - Download the [latest release](https://gipi.thecanasdev.repl.co/release)**
 ```
 Download the .tar.gz file
 ``` 
 
 **2 - Unzip the tar.gz file**
 ```sh
-$ tar -xf gipi-{version}.tar.gz gipi
+$ tar -xf {gipi_file_name}.tar.gz gipi
 ```
-*NOTE: Replace {version} with the gipi version you downloaded*
+*NOTE: Replace {gipi_file_name} with the name of the file you downloaded*
 
 **3 - Go to gipi directory**
 ```sh
@@ -34,6 +34,10 @@ $ sudo ./install.sh
 ```
 If an error ocurrs on instalation open an issue or join our discord (see below)
 ```
+
+**Troubleshooting**
+If GIPI outputs an error like "package not found" install python-pip package and run the script again
+
 
 **Contribuing**
 
